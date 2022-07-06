@@ -1,0 +1,524 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700&display=swap');
+
+/*========== ROOT ========== */
+
+:root {
+    /* FONTS */
+    --fonte: 'Exo', sans-serif;
+    ;
+
+    /* PALETA DE CORES */
+    --Primaria-Azul-Escuro: #022041;
+    --Secundaria-Azul-Claro: #3375BA;
+    --Terciaria-Cinza: #6C757D;
+}
+
+/* CONFIGURAÇÕES GERAIS */
+
+html {
+    overflow-x: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+header {
+    background-color: var(--Primaria-Azul-Escuro);
+}
+
+span, h1, p, small, label {
+    font-family: var(--fonte);
+}
+
+main {
+    min-height: 100vh;
+}
+
+/*========== HEADER ========== */
+
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.box-header {
+    height: 6.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 13rem;
+}
+
+/*========== SIDEBAR ========== */
+
+.container_nav_sidebar {
+    width: 100%;
+    height: 100%;
+
+}
+
+.sidebar {
+    background-color: var(--Primaria-Azul-Escuro);
+    height: 103vh;
+    width: 13rem;
+    float: left
+}
+
+.container_sidebar {
+    padding: 2rem 0.5rem 2rem 0.5rem;
+    width: 100%;
+    height: 100%;
+
+}
+
+.nav_sidebar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box_foto_perfil_sidebar {
+    background-color: var(--Secundaria-Azul-Claro);
+    width: 12rem;
+    height: 3.981rem;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+
+}
+
+.foto_perfil_sidebar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 24px;
+    margin: 0.5rem 0.5rem 0.5rem
+}
+
+.nome_perfil_sidebar {
+    font-family: var(--fonte);
+    font-weight: 500;
+    font-size: 1rem;
+    color: #fff;
+
+}
+
+.container_nav_sidebar {
+    height: 100%;
+    width: 100%;
+}
+
+.link_sidebar {
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    max-width: 25.1rem;
+    height: 1.5rem;
+}
+
+.link_sidebar_logout {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 6.25rem;
+    margin-bottom: 1.5rem;
+    max-width: 25.1rem;
+    height: 1.5rem;
+}
+
+.box_link_sidebar {
+    display: flex;
+    align-items: center;
+}
+
+.span_box_sidebar {
+    margin: 0.5rem;
+}
+
+.span_box_sidebar {
+    color: white;
+    font-weight: 500;
+}
+
+/*========== FOOTER ========== */
+
+footer {
+    background-color: var(--Primaria-Azul-Escuro);
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+}
+
+.container_footer {
+    width: 940px;
+    height: 6.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.small_container_footer {
+    color: #fff;
+    font-weight: 400;
+}
+
+.box_redes_socias_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 14.875rem;
+    height: 3.5rem;
+}
+
+.icone_footer {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+/*========== LOGIN ========== */
+
+.container_main_login {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_form_login {
+    width: 30rem;
+    height: 31.75rem;
+    border-radius: 24px;
+    box-shadow: 0px 0px 72px rgba(0, 0, 0, 0.28);
+    display: flex;
+    flex-direction: column;
+    margin: 6.25rem 0 6.25rem 0;
+    align-items: center;
+    padding: 5rem;
+}
+
+.box_span_login {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+.box_span_titulo_login {
+    color: var(--Secundaria-Azul-Claro);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.box_span_subtitulo {
+    color: var(--Primaria-Azul-Escuro);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.form_login {
+    width: 21rem;
+    height: 3.5rem;
+}
+
+.input_login {
+    width: 21rem;
+    height: 3.5rem;
+    border-radius: 24px;
+    border: 3px solid var(--Primaria-Azul-Escuro);
+    padding-left: 1rem;
+    font-family: var(--fonte);
+    margin-top: 1rem;
+}
+
+.input_login::-moz-placeholder {
+    font-family: var(--fonte);
+    font-size: 1rem;
+    color: var(--Terciaria-Cinza);
+    font-weight: 700;
+}
+
+.button_login {
+    margin-top: 1.5rem;
+    background-color: var(--Secundaria-Azul-Claro);
+    border: none;
+    color: white;
+    font-family: var(--fonte);
+    width: 21rem;
+    height: 3.5rem;
+    font-size: 1rem;
+    border-radius: 24px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.button_login:hover {
+    opacity: 0.5;
+}
+
+/*========== MODAL ========== */
+.container_modal_perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.foto_perfil_modal_perfis {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 80px;
+    box-shadow: 0px 0px 72px rgba(0, 0, 0, 0.28);
+
+}
+
+.span_modal_perfil {
+    font-weight: 700;
+    color: var(--Primaria-Azul-Escuro);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+
+.button_modal_perfil {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: 3px solid var(--Primaria-Azul-Escuro);
+    background-color: transparent;
+    font-family: var(--fonte);
+    width: 21rem;
+    height: 3.5rem;
+    font-size: 1rem;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/*========== PERFIS ========== */
+
+.container_perfil {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 1rem 0 1rem 0;
+    width: 83%;
+}
+
+.box_perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.foto_perfil_perfis {
+    height: 22.5rem;
+    width: 22.5rem;
+    border-radius: 190px;
+    box-shadow: 0px 0px 72px rgba(0, 0, 0, 0.28);
+
+}
+
+.box_nomes_perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nome_usuario_perfil {
+    color: var(--Secundaria-Azul-Claro);
+    font-size: 3.5rem;
+    font-weight: 500;
+    max-height: 3.563rem;
+}
+
+.tipo_usuario_perfil {
+    color: var(--Primaria-Azul-Escuro);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.span_perfil {
+    width: 21rem;
+    height: 3.5rem;
+    border-radius: 24px;
+    border: 3px solid var(--Primaria-Azul-Escuro);
+    padding-left: 1rem;
+    font-family: var(--fonte);
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+
+}
+
+.icone_perfil {
+    margin-right: 1rem;
+    width: 2.375rem;
+    height: 2.375rem;
+}
+
+.seta_perfil {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.seta_perfil:hover {
+    opacity: 0.5;
+}
+
+.box_setas_perfis {
+    margin-top: 1.5rem;
+    display: flex;
+    width: 51.938rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.button_perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: var(--Secundaria-Azul-Claro);
+    border: none;
+    color: white;
+    font-family: var(--fonte);
+    width: 21rem;
+    height: 3.5rem;
+    font-size: 1rem;
+    border-radius: 24px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.button_perfil_geral {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: var(--Secundaria-Azul-Claro);
+    border: none;
+    color: white;
+    font-family: var(--fonte);
+    width: 21rem;
+    height: 3.5rem;
+    font-size: 1rem;
+    border-radius: 24px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.button_perfil:hover {
+    opacity: 0.5;
+}
+
+.button_perfil_geral:hover {
+    opacity: 0.5;
+}
+
+.Modal {
+    position: absolute;
+    top: 5rem;
+    left: 19rem;
+    right: 22rem;
+    bottom: 5rem;
+    background-color: #fff;
+    border-radius: 24px;
+}
+
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.46);
+    ;
+}
+
+/*========== CADASTRAR USUARIO ========== */
+.container_cadastro_usuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 84%;
+}
+
+
+.form_cadastro_usuario {
+    width: 35rem;
+    height: 28.75rem;
+    border-radius: 24px;
+    box-shadow: 0px 0px 72px rgba(0, 0, 0, 0.28);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.25rem;
+    margin-bottom: 3.25rem;
+    padding: 2rem;
+}
+
+.campo_tipo_usuario_cadastro_usuario {
+
+    width: 21rem;
+    height: 3.5rem;
+    border-radius: 24px;
+    border: 3px solid var(--Primaria-Azul-Escuro);
+    padding-left: 1rem;
+    font-family: var(--fonte);
+    margin-top: 1rem;
+    color: var(--Terciaria-Cinza);
+    font-weight: 500;
+
+}
+
+.label_cadastro_usuario {
+    border: 3px solid var(--Secundaria-Azul-Claro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    width: 21rem;
+    height: 3.5rem;
+    color: var(--Secundaria-Azul-Claro);
+}
+
+.input_cadastro_usuario {
+    display: none;
+}
+
+/*========== NOT FOUND ========== */
+.container_not_found {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Primaria-Azul-Escuro);
+}
+
+.span_not_found {
+    color: #fff;
+    font-size: 2rem;
+}

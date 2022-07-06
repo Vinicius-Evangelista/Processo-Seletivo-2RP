@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>2rp-processo.webApi</name>
+    </assembly>
+    <members>
+        <member name="M:_2rp_processo.webApi.Interface.ITipoUsuarioRepository.ListarTipoUsuario">
+            <summary>
+            LIsta todos os tipos usuarios
+            </summary>
+            <returns>Uma lista com todos os tipos de usuarios</returns>
+        </member>
+        <member name="M:_2rp_processo.webApi.Interface.IUsuarioRepository.CadastrarUsuario(_2rp_processo.webApi.ViewModels.UsuarioViewModelCadastro)">
+            <summary>
+            Cadastra um novo usuário
+            </summary>
+            <param name="novoUsuario">Objeto contendo os dados do usuário</param>
+        </member>
+        <member name="M:_2rp_processo.webApi.Interface.IUsuarioRepository.ExcluirUsuario(System.Int32)">
+            <summary>
+            Exclui um usuário existente
+            </summary>
+            <param name="idUsuario">Id do usuário que será excluido</param>
+        </member>
+        <member name="M:_2rp_processo.webApi.Interface.IUsuarioRepository.AtualizarUsuarioGeral(System.Int32,_2rp_processo.webApi.ViewModels.UsuarioAtualizadoGeralViewModel)">
+            <summary>
+            Atualiza o email e a senha de um usuário
+            </summary>
+            <param name="idUsuario">Id do usuario que será atualizado</param>
+            <param name="usuarioAtualizado">Objeto contendo um novo email e senha</param>
+        </member>
+        <member name="M:_2rp_processo.webApi.Interface.IUsuarioRepository.AtualizarUsuarioPrivilegiado(System.Int32,_2rp_processo.webApi.ViewModels.UsuarioAtualizadoPrivilegiado)">
+            <summary>
+            Atualiza um todas as informaçoes de um usuário
+            </summary>
+            <param name="idUsuario">Id do usuario que será atualizado</param>
+            <param name="usuarioAtualizado">Novas informções do usuário que serão atualizadas</param>
+            <returns></returns>
+        </member>
+        <member name="M:_2rp_processo.webApi.Interface.IUsuarioRepository.ListarUsuarios">
+            <summary>
+            Lista todos os usuário
+            </summary>
+            <returns>Uma lista com todos os usuários</returns>
+        </member>
+        <member name="M:_2rp_processo.webApi.Interface.IUsuarioRepository.ListarUsuarioPorId(System.Int32)">
+            <summary>
+            Lista um usuário em específico
+            </summary>
+            <param name="idUsuario">Id do usuário que será listado</param>
+            <returns>O usuário de acordo com o Id passado</returns>
+        </member>
+        <member name="M:_2rp_processo.webApi.Interface.IUsuarioRepository.Login(System.String,System.String)">
+            <summary>
+            Efetua o Login
+            </summary>
+            <param name="email">Email do usuario</param>
+            <param name="senha">Senha do usuario</param>
+            <returns>O token do usuario</returns>
+        </member>
+        <member name="M:_2rp_processo.webApi.Repository.UsuarioRepository.AtualizarSenha(System.Int32,System.String)">
+            <summary>
+            Atualiza a senha 
+            </summary>
+            <param name="idUsuario">Id do Usuario que a senha será atualizada</param>
+            <param name="senhaAtualizada">senha atualizada</param>
+        </member>
+        <member name="M:_2rp_processo.webApi.Repository.UsuarioRepository.ValidarSenha(System.String)">
+            <summary>
+            Valida senha 
+            </summary>
+            <param name="senha">senha que será validada</param>
+            <returns>se a senha é valida(true) ou não(false)</returns>
+        </member>
+        <member name="M:_2rp_processo.webApi.Utils.Criptografia.CriptografarSenha(System.String)">
+            <summary>
+            Criptografa uma senha
+            </summary>
+            <param name="senha">senha que será criptografada</param>
+            <returns>Uma senha criptografada</returns>
+        </member>
+        <member name="M:_2rp_processo.webApi.Utils.Criptografia.CompararSenha(System.String,System.String)">
+            <summary>
+            Compara uma as senhas recebidas
+            </summary>
+            <param name="senhaForm">Senha vinda do front</param>
+            <param name="senhaBanco">Senha criptografado no banco</param>
+            <returns>True ou False baseado no resultado da comparação</returns>
+        </member>
+        <member name="M:_2rp_processo.webApi.Utils.Upload.UploadFile(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Faz o upload do arquivo para o servidor
+            </summary>
+            <param name="arquivo">Arquivo vindo de um formulário</param>
+            <returns>Nome do arquivo salvo</returns>
+        </member>
+        <member name="M:_2rp_processo.webApi.Utils.Upload.ValidarExtensao(System.String[],System.String)">
+            <summary>
+            Valida o uso de enxtensões permitidas apenas
+            </summary>
+            <param name="extensoes">Array de extensões permitidas</param>
+            <param name="nomeDoArquivo">Nome do arquivo</param>
+            <returns>Verdadeiro/Falso</returns>
+        </member>
+        <member name="M:_2rp_processo.webApi.Utils.Upload.RemoverArquivo(System.String)">
+            <summary>
+            Remove um arquivo do servidor
+            </summary>
+            <param name="nomeDoArquivo">Nome do Arquivo</param>
+        </member>
+        <member name="M:_2rp_processo.webApi.Utils.Upload.RetornarExtensao(System.String)">
+            <summary>
+            Retorna a extensão de um arquivo
+            </summary>
+            <param name="nomeDoArquivo">Nome do Arquivo</param>
+            <returns>Retorna a extensão de um arquivo</returns>
+        </member>
+    </members>
+</doc>
