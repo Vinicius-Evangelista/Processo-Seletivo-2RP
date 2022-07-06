@@ -22,7 +22,7 @@ namespace _2rp_processo.webApi.Controllers
             _usuarioRepository = repo;
         }
 
-        //[Authorize(Roles = "1,2")]
+        [Authorize(Roles = "1,2")]
         [HttpPost("Cadastrar")]
         public IActionResult CadastrarUsuario( [FromForm] UsuarioViewModelCadastro NovoUsuario, IFormFile FotoPerfil)
         {
@@ -63,7 +63,7 @@ namespace _2rp_processo.webApi.Controllers
             }
         }
 
-        //[Authorize(Roles = "1,2,3")]
+        [Authorize(Roles = "1,2,3")]
         [HttpGet("Listar")]
         public IActionResult ListarUsuarios()
         {
@@ -77,6 +77,7 @@ namespace _2rp_processo.webApi.Controllers
             }
         }
 
+        [Authorize(Roles = "1,2,3")]
         [HttpGet("Listar/{idUsuario}")]
         public IActionResult ListaUsuarioPorId(int idUsuario)
         {
@@ -95,7 +96,7 @@ namespace _2rp_processo.webApi.Controllers
             }
         }
 
-        //[Authorize(Roles = "1,2,3")]
+        [Authorize(Roles = "1,2,3")]
         [HttpPut("Atualizar/Privilegiado/{IdUsuario}")]
         public IActionResult AtualizarUsuarioPrivilegiado(int IdUsuario, [FromForm] UsuarioAtualizadoPrivilegiado UsuarioAtualizado, IFormFile FotoPerfil)
         {
@@ -135,7 +136,7 @@ namespace _2rp_processo.webApi.Controllers
             }
         }
 
-        //[Authorize(Roles = "1,2")]
+        [Authorize(Roles = "1,2")]
         [HttpPut("Atualizar/Geral/{IdUsuario}")]
         public IActionResult AtualizarUsuarioGeral(int IdUsuario, [FromForm] UsuarioAtualizadoGeralViewModel UsuarioAtualizado, IFormFile FotoPerfil)
         {
@@ -177,7 +178,7 @@ namespace _2rp_processo.webApi.Controllers
         }
 
 
-        //[Authorize(Roles = "1")]
+        [Authorize(Roles = "1")]
         [HttpDelete("Excluir/{IdUsuario}")]
         public IActionResult ExcluirUsuario(int IdUsuario)
         {
