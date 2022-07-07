@@ -1,5 +1,5 @@
 # Processo-Seletivo-2RP 🔵
-Esse repositório foi desenvolvido com o intuito de apresentar todo o código fonte utilizado para solucionar a demanda que foi entregue. 
+Este repositório foi desenvolvido com o intuito de apresentar todo o código fonte utilizado para solucionar a demanda que foi entregue. 
 
 ## Como utilizar aplicação ? 
 > Tenha o NodeJS e o framework dotnet em sua máquina assim como o Git, casa não os tenha:
