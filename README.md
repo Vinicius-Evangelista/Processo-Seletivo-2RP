@@ -1,5 +1,5 @@
 # Processo-Seletivo-2RP 🔵
-Esse repositório foi desenvolvido com o intuito apresentar todo o código fonte utilizado para solucionar a demanda que foi entregue. 
+Esse repositório foi desenvolvido com o intuito de apresentar todo o código fonte utilizado para solucionar a demanda que foi entregue. 
 
 ## Como utilizar aplicação ? 
 > Tenha o NodeJS e o framework dotnet em sua máquina assim como o Git, casa não os tenha:
@@ -7,14 +7,14 @@ Esse repositório foi desenvolvido com o intuito apresentar todo o código fonte
  - https://dotnet.microsoft.com/en-us/
  - https://git-scm.com/
  
- > Entra na pasta "processo-seletivo-2RP-rest-api" e insira o comando:
+ > Entre na pasta "processo-seletivo-2RP-rest-api" e insira o comando:
  - dotnet run (Para iniciar a API)
  
- > Entra na pasta "processo-2rp-front-end" e insira dos comando:
+ > Entre na pasta "processo-2rp-front-end" e insira dos comando:
  - npm i
  - npm start
  
-> Pronto 😀! Basta que o banco estava ativo na AWS e tudo estará funcionando perfeitamente.
+> Pronto 😀! Basta que o banco esteja ativo na AWS e tudo estará funcionando perfeitamente.
 
 ## Demanda 🤔: 
 - Criar um sistema que possibilite o cadastro e login de usuários
@@ -55,7 +55,7 @@ mações;
 - AWS: Utilizada como serviço em nuvem para hospedar o banco de dados. 
 - SQL Server: Banco de dados utilizado para armazenar e gerenciar os dados.
 - .NET: A API REST foi feita com C# utilizando o ambiente .Net como framework.
-- React: Bibilioteca de JavaScript utilizada para densenvolver o front-end.
+- React: Biblioteca de JavaScript utilizada para densenvolver o front-end.
 
 
 ## Ferramentas secundárias  :
